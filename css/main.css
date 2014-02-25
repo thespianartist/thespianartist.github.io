@@ -12,7 +12,7 @@ footer
 	position: absolute;
 	bottom: 0;
 	color: black;
-	background: #F17099;
+	background: #00de72;
 	width: 100%;
 }
 
@@ -20,6 +20,7 @@ footer p
 {
 	text-align: center;
 	color: white;
+
 }
 
 header
@@ -95,6 +96,7 @@ nav ul li a
 {
 	color: white;
 	text-decoration: none;
+	font-family: Roboto;
 	display: block;
 	padding: 0.6em;
 }
