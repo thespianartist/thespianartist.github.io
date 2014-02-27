@@ -2,25 +2,38 @@
 body
 {
 	border-top: solid #01B5FE .3em;
-	background: #FBFDEB;
+	background: #d9d8da;
+	color:white;
 	font-size: 16px;
+	font-family: Roboto;
 }
 
-
 footer
-{
+{	
+	padding: 0.5em;
+	font-family: Roboto;
 	position: absolute;
-	bottom: 0;
+	width: 100%;
+	margin:0 auto auto auto;
 	color: black;
 	background: #00de72;
-	width: 100%;
+	border-bottom: solid #007F41 4px; 
 }
 
 footer p
 {
 	text-align: center;
 	color: white;
+}
 
+footer p:after
+{
+	content: "-";
+}
+
+footer p:before
+{
+	content: "-";
 }
 
 header
@@ -28,7 +41,7 @@ header
 	padding: 0.5em;
 	overflow: hidden;
 	position: relative;
-	background: #FBFDEB;
+	background: #FAFAFF;
 
 }
 
@@ -37,7 +50,6 @@ header h1
 	color : #03b4fd;
 	margin: 0 0 0 0;
 	font-family: Roboto;
-	margin-right: solid red 3px;
 	padding: 0;
 }
 
@@ -52,14 +64,6 @@ header h1:after
 }
 
 
-header h1:before
-{
-   content: "-";
-   color: #00de72;
-   padding: 0;
-   margin: 0;
-}
-
 header p
 {
 	color: #00de72;
@@ -67,6 +71,49 @@ header p
 	padding: 0;
 	margin-right: solid red 2px;
 	font-family: Roboto;
+}
+
+header #triangulo
+{
+	width: 0; 
+	height: 0;
+	position: absolute;
+	top: 0;
+	right: 0; 
+	margin: 0;
+	padding: 0;
+	border-left: 1em solid transparent;
+	border-right: 1em solid transparent;
+	border-bottom: 4em solid rgba(0, 165, 85, 0.7);
+}
+
+header #triangulo2
+{
+	width: 0; 
+	height: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	right: 1em; 
+	border-left: 1em solid transparent;
+	border-right: 1em solid transparent;
+	border-bottom: 4em solid rgba(242, 58, 78,0.7);
+}
+
+header #triangulo3
+{
+	width: 0; 
+	height: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	right: 2em; 
+	border-left: 1em solid transparent;
+	border-right: 1em solid transparent;
+	border-bottom: 4em solid rgba(2, 163, 229, 0.7);
+
 }
 
 header h1, header p
@@ -77,19 +124,22 @@ header h1, header p
 nav
 {	
 	background: #03b4fd;
-	position: relative;
+	border-bottom: solid #03A3E5 4px;
+	padding: 0.5em;
+
 }
 
 nav ul
 {
 	list-style: none;
 	margin: 0;
+	padding: 0;
 }
 
 nav ul li
 {
 	display: inline-block;
-	margin: 0 1em 0 0;
+	margin: 0 0.5em 0 0;
 }
 
 nav ul li a
@@ -98,8 +148,15 @@ nav ul li a
 	text-decoration: none;
 	font-family: Roboto;
 	display: block;
-	padding: 0.6em;
+	padding: 0.5em 0.5em 0.5em 0;
 }
+
+.me 
+{
+	text-align: left;
+	padding: 0.5em;
+}
+
 
 
 
