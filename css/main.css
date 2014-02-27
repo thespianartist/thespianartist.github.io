@@ -1,28 +1,81 @@
+@font-face {
+	font-family: 'rusalka';
+	src:url('fuentes/rusalka.eot?-d6seey');
+	src:url('fuentes/rusalka.eot?#iefix-d6seey') format('embedded-opentype'),
+		url('fuentes/rusalka.woff?-d6seey') format('woff'),
+		url('fuentes/rusalka.ttf?-d6seey') format('truetype'),
+		url('fuentes/rusalka.svg?-d6seey#rusalka') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'rusalka';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tablet:before {
+	content: "\e601";
+}
+.icon-pencil:before {
+	content: "\e604";
+}
+.icon-android:before {
+	content: "\e602";
+}
+.icon-html5:before {
+	content: "\e605";
+}
+.icon-github:before {
+	content: "\e603";
+}
+.icon-facebook:before {
+	content: "\e606";
+}
+.icon-twitter:before {
+	content: "\e607";
+}
+.icon-instagram:before {
+	content: "\e608";
+}
+.icon-checkbox-partial:before {
+	content: "\e600";
+}
+.icon-file-css:before {
+	content: "\e609";
+}
+
 
 body
 {
 	border-top: solid #01B5FE .3em;
-	background: #d9d8da;
-	color:white;
+	background: #FAFAFF;
+	color: #272722;
 	font-size: 16px;
-	font-family: Roboto;
+	font-family: 'Roboto', sans-serif;
 }
 
 footer
 {	
 	padding: 0.5em;
-	font-family: Roboto;
-	position: absolute;
-	width: 100%;
-	margin:0 auto auto auto;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
 	color: black;
 	background: #00de72;
 	border-bottom: solid #007F41 4px; 
 }
 
-footer p
+footer 
 {
-	text-align: center;
 	color: white;
 }
 
@@ -47,9 +100,9 @@ header
 
 header h1
 {
-	color : #03b4fd;
+	color : black;
 	margin: 0 0 0 0;
-	font-family: Roboto;
+	font-family: 'Roboto', sans-serif;
 	padding: 0;
 }
 
@@ -70,8 +123,9 @@ header p
 	margin: 0;
 	padding: 0;
 	margin-right: solid red 2px;
-	font-family: Roboto;
+	font-family: 'Roboto', sans-serif;
 }
+
 
 header #triangulo
 {
@@ -79,44 +133,14 @@ header #triangulo
 	height: 0;
 	position: absolute;
 	top: 0;
-	right: 0; 
-	margin: 0;
-	padding: 0;
-	border-left: 1em solid transparent;
-	border-right: 1em solid transparent;
-	border-bottom: 4em solid rgba(0, 165, 85, 0.7);
+	left: 0;
+	padding: 0 0 0 0;
+	border-right: 2.5em solid transparent;
+	border-bottom: 4em solid rgba(242, 58, 78,0.4);
 }
 
-header #triangulo2
-{
-	width: 0; 
-	height: 0;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	top: 0;
-	right: 1em; 
-	border-left: 1em solid transparent;
-	border-right: 1em solid transparent;
-	border-bottom: 4em solid rgba(242, 58, 78,0.7);
-}
 
-header #triangulo3
-{
-	width: 0; 
-	height: 0;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	top: 0;
-	right: 2em; 
-	border-left: 1em solid transparent;
-	border-right: 1em solid transparent;
-	border-bottom: 4em solid rgba(2, 163, 229, 0.7);
-
-}
-
-header h1, header p
+header h1, header p, header #triangulo
 {
 	display: inline-block;
 }
@@ -146,20 +170,34 @@ nav ul li a
 {
 	color: white;
 	text-decoration: none;
-	font-family: Roboto;
+	font-family: 'Roboto', sans-serif;
 	display: block;
 	padding: 0.5em 0.5em 0.5em 0;
 }
 
-.me 
+.me
 {
-	text-align: left;
-	padding: 0.5em;
+	background: rgba(0, 0, 0, 0.5);
+
 }
 
+.me h2
+{
+	font-family: 'Roboto', sans-serif;
+	text-align: left;
+	color: white;
+	padding: 0;
+	margin:0;
+	font-size: 2em;
+	padding: 10px;
+	text-align: center;
+}
 
-
-
+.me a
+{
+	font-size: 2em;
+	color: white;
+}
 
 
 
