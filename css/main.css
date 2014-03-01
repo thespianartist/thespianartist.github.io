@@ -61,7 +61,7 @@
 body
 {
 	border-top: solid #01B5FE .3em;
-	background: #FAFAFF;
+	background: #7d7d7f;
 	color: #272722;
 	font-size: 16px;
 	font-family: 'Roboto', sans-serif;
@@ -153,6 +153,7 @@ nav
 	background: #03b4fd;
 	border-bottom: solid #03A3E5 4px;
 	padding: 0.5em;
+	position: relative;
 
 }
 
@@ -178,32 +179,74 @@ nav ul li a
 	padding: 0.5em 0.5em 0.5em 0;
 }
 
-.me
-{
+#contenido{
 	background: rgba(0, 0, 0, 0.5);
-	text-align: center;
-
-}
-
-.me h2
-{
-	font-family: 'Roboto', sans-serif;
-	text-align: left;
-	color: white;
+	margin: 0;
 	padding: 0;
-	margin:0;
-	font-size: 2em;
-	padding: 10px;
+}
+
+#contenido #me figure, #contenido #me_details
+{
 	text-align: center;
 }
 
-.me span
+#contenido #me
 {
-	font-size: 5em;
-	color: white;
-	text-decoration: none;
+	margin: 0;
+	padding: 0;
 }
 
+#contenido #me_details
+{
+	color: white;
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
+}
+
+#contenido #me_details h2
+{
+	margin: 0;
+	padding: 0;
+}
+
+#contenido #me_details span
+{
+	margin: 0;
+	padding: 0;
+	font-size: 2em;
+}
+
+#contenido #me_details span:hover
+{
+	color: red;
+}
+
+#contenido  #me  figure
+{
+	padding: 0.5em 0 0 0.3em;
+	margin: 0;
+}
+
+#contenido  #me figure img
+{
+	width: 100px;
+	border-radius: 50%;
+}
+
+@media screen and (min-width: 1000px){
+	body
+	{
+		text-align: center;
+		margin: 0 auto;
+		max-width: 1100px;
+		background: #7d7d7f;
+	}
+
+	
+
+
+}
 
 
 
