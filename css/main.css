@@ -1,10 +1,23 @@
 @font-face {
+    font-family: 'robotothin';
+    src: url('../fonts/Roboto-Thin-webfont.eot');
+    src: url('../fonts/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Thin-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Thin-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
 	font-family: 'icomoon';
-	src:url('/fonts/icomoon.eot?-5hkhba');
-	src:url('/fonts/icomoon.eot?#iefix-5hkhba') format('embedded-opentype'),
-		url('/fonts/icomoon.woff?-5hkhba') format('woff'),
-		url('/fonts/icomoon.ttf?-5hkhba') format('truetype'),
-		url('/fonts/icomoon.svg?-5hkhba#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?-5hkhba');
+	src:url('../fonts/icomoon.eot?#iefix-5hkhba') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-5hkhba') format('woff'),
+		url('../fonts/icomoon.ttf?-5hkhba') format('truetype'),
+		url('../fonts/icomoon.svg?-5hkhba#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -64,13 +77,13 @@ body
 	background: #7d7d7f;
 	color: #272722;
 	font-size: 16px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'robotothin', sans-serif;
 }
 
 footer
 {	
 	padding: 0.5em;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'robotothin', sans-serif;
 	text-align: center;
 	color: black;
 	background: #00de72;
@@ -105,7 +118,7 @@ header h1
 {
 	color : black;
 	margin: 0 0 0 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'robotothin', sans-serif;
 	padding: 0;
 }
 
@@ -126,7 +139,7 @@ header p
 	margin: 0;
 	padding: 0;
 	margin-right: solid red 2px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'robotothin', sans-serif;
 }
 
 
@@ -174,7 +187,7 @@ nav ul li a
 {
 	color: white;
 	text-decoration: none;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'robotothin', sans-serif;
 	display: block;
 	padding: 0.5em 0.5em 0.5em 0;
 }
@@ -183,6 +196,7 @@ nav ul li a
 	background: rgba(0, 0, 0, 0.5);
 	margin: 0;
 	padding: 0;
+	min-height: 32em;
 }
 
 #contenido #me figure, #contenido #me_details
@@ -194,6 +208,7 @@ nav ul li a
 {
 	margin: 0;
 	padding: 0;
+
 }
 
 #contenido #me_details
@@ -212,9 +227,16 @@ nav ul li a
 
 #contenido #me_details span
 {
-	margin: 0;
+	margin-left: 0.5em;
 	padding: 0;
-	font-size: 2em;
+	font-size: 1em;
+}
+
+#contenido #me_details p
+{
+	display: block;
+	color: white;
+	font-size: 0.5em;
 }
 
 #contenido #me_details span:hover
@@ -234,7 +256,7 @@ nav ul li a
 	border-radius: 50%;
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1080px){
 	body
 	{
 		text-align: center;
@@ -243,7 +265,13 @@ nav ul li a
 		background: #7d7d7f;
 	}
 
-	
+	#contenido #me_details p
+	{
+		display: block;
+		color: white;
+		font-size: 0.5em;
+		text-align: center;
+	}
 
 
 }
