@@ -13,11 +13,11 @@
 
 @font-face {
 	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?-5hkhba');
-	src:url('../fonts/icomoon.eot?#iefix-5hkhba') format('embedded-opentype'),
-		url('../fonts/icomoon.woff?-5hkhba') format('woff'),
-		url('../fonts/icomoon.ttf?-5hkhba') format('truetype'),
-		url('../fonts/icomoon.svg?-5hkhba#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?xlbjg');
+	src:url('../fonts/icomoon.eot?#iefixxlbjg') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?xlbjg') format('woff'),
+		url('../fonts/icomoon.ttf?xlbjg') format('truetype'),
+		url('../fonts/icomoon.svg?xlbjg#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -36,9 +36,6 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-dice:before {
-	content: "\e600";
-}
 .icon-tablet:before {
 	content: "\e601";
 }
@@ -69,6 +66,19 @@
 .icon-images:before {
 	content: "\e60a";
 }
+.icon-stats:before {
+	content: "\e600";
+}
+.icon-html5:before {
+	content: "\e60b";
+}
+.icon-at:before {
+	content: "\e60c";
+}
+.icon-gallery:before {
+	content: "\e60d";
+}
+
 
 
 body
@@ -343,6 +353,26 @@ nav ul li a
 	width: 100px;
 	border-radius: 50%;
 }
+
+#contenido_pasion
+{
+	background: white;
+	
+}
+
+#contenido_pasion #pasion h2
+{
+	font-size: 3em;
+}
+
+#contenido_pasion #pasion span
+{
+	font-size: 4em;
+	padding: 0.1em;
+	display: inline-block;
+	margin-bottom: 1em;
+}
+
 
 @media screen and (min-width: 768px){
 
