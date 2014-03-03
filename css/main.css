@@ -390,6 +390,7 @@ nav ul li a
 #contenido_pasion #android
 {
 		color: #97cb02;
+		position: relative;
 }
 
 #contenido_pasion #android:after
@@ -397,18 +398,37 @@ nav ul li a
 		content: "android";
 		font-size: 16px;
 		position: absolute;
-		bottom: 0;
+		left: 0.5em;
 }
 
 #contenido_pasion #responsive
 {
 		color: #ff0001;
+		position: relative;
+}
+
+#contenido_pasion #responsive:after
+{
+		content: "ux/ui";
+		font-size: 16px;
+		position: absolute;
+		left: 1em;
 }
 
 #contenido_pasion #html5
 {
-		color: #e54d26
+		color: #e54d26;
+		position: relative;
 }
+
+#contenido_pasion #html5:after
+{
+		content: "html5";
+		font-size: 16px;
+		position: absolute;
+		left: 1em;
+}
+
 
 @media screen and (min-width: 768px){
 
