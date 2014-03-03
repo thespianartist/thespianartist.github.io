@@ -365,6 +365,11 @@ nav ul li a
 	font-size: 3em;
 }
 
+#contenido_pasion #pasion h3
+{
+	font-style: italic;
+}
+
 #contenido_pasion #pasion span
 {
 	font-size: 4em;
@@ -372,6 +377,15 @@ nav ul li a
 	display: inline-block;
 	margin-bottom: 1em;
 }
+
+#contenido_pasion #pasion p 
+{
+		display: block;
+		color: black;
+		font-size: 16px;
+		padding: 0 3em;
+		text-align: center;
+} 
 
 
 @media screen and (min-width: 768px){
