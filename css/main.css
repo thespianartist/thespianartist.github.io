@@ -193,11 +193,10 @@ nav ul li a
 #contenido_education:before{
 	content:"";
 	position: absolute;
+  	top:0;
   	left: 0;
-  	right: 0;
   	z-index: -1;
 	background-image: url(../img/fondoeducacion.jpg);
-	background-repeat: none;
 	height: 100%;
 	width: 100%;
 
@@ -246,7 +245,7 @@ nav ul li a
 #contenido_education #education #ipn img
 {
 	width: 100px;
-	background: white;
+	background: rgba(255,255,255,0.8);
 	border-radius: 2em;
 }
 
@@ -254,7 +253,7 @@ nav ul li a
 #contenido_education #education #mejorandola img
 {
 	width: 200px;
-	background: white;
+	background: rgba(255,255,255,0.75);
 	border-radius: 2em;
 }
 
@@ -310,9 +309,23 @@ nav ul li a
 	font-family: 'robotothin', sans-serif;
 	font-size: 0.5em;
 	padding: 1em  1em;
-	margin: 0;
+	margin: 0 0 0.5em 0;
 	text-align: justify;
 }
+
+#contenido #me_details #contactme
+{
+	text-decoration: none;
+	background: white;
+	border-bottom: solid #E5E5E5 5px;
+	font-size: 0.8em;
+	color: #3e3e3f;
+	padding: 0.2em;
+	width: 8em;
+	border-radius: 0.2em;
+	margin-top: 1em;
+}
+
 
 #contenido #me_details span:hover
 {
