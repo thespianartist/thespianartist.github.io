@@ -73,9 +73,7 @@
 
 body
 {
-	border-top: solid #01B5FE .3em;
-	background: #7d7d7f;
-	color: #272722;
+	background:  #7d7d7f;
 	font-size: 16px;
 	font-family: 'robotothin', sans-serif;
 }
@@ -191,52 +189,137 @@ nav ul li a
 	display: block;
 	padding: 0.5em 0.5em 0.5em 0;
 }
+ 
+#contenido_education:before{
+	content:"";
+	position: absolute;
+  	left: 0;
+  	right: 0;
+  	z-index: -1;
+	background-image: url(../img/fondoeducacion.jpg);
+	background-repeat: none;
+	height: 100%;
+	width: 100%;
+
+  	-webkit-filter: blur(4px);
+  	-moz-filter: blur(4px);
+  	-o-filter: blur(4px);
+  	-ms-filter: blur(4px);
+  	filter: blur(4px);
+}
+
+#contenido_education 
+{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	text-align: center;
+	
+}
+
+#contenido_education #education h2
+{
+	color: white;
+	font-size: 3em;
+	text-align: center;
+	font-family: 'robotothin', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+#contenido_education #education #ipn, #contenido_education #education #mejorandola
+{
+	position: relative;
+}
+
+#contenido_education #education #ipn:after
+{
+	content: "Instituto Politecnico Nacional";
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 70%
+	padding: 0 0 0 0.5em;
+
+}
+
+#contenido_education #education #ipn img
+{
+	width: 100px;
+	background: white;
+	border-radius: 2em;
+}
+
+
+#contenido_education #education #mejorandola:after
+{
+	content: "mejorandola";
+	color: white;
+}
+
+#contenido_education #education #mejorandola img
+{
+	width: 200px;
+	background: white;
+	border-radius: 2em;
+}
+
 
 #contenido{
 	background: rgba(0, 0, 0, 0.5);
-	margin: 0;
+	margin: 0 0 1em 0;
 	padding: 0;
-	min-height: 32em;
 }
+
 
 #contenido #me figure, #contenido #me_details
 {
 	text-align: center;
 }
 
-#contenido #me
-{
-	margin: 0;
-	padding: 0;
-
-}
 
 #contenido #me_details
 {
 	color: white;
 	font-size: 2em;
 	margin: 0;
-	padding: 0;
+	padding: 0.5em;
 }
 
 #contenido #me_details h2
 {
 	margin: 0;
 	padding: 0;
+	font-family: 'robotothin', sans-serif;
+}
+
+#contenido #me_details h2:after
+{
+	content: "-"
+}
+
+#contenido #me_details h2:before
+{
+	content: "-"
 }
 
 #contenido #me_details span
 {
-	margin-left: 0.5em;
-	padding: 0;
 	font-size: 1em;
+	padding-left: 0.5em;
 }
 
 #contenido #me_details p
 {
 	display: block;
 	color: white;
+	font-family: 'robotothin', sans-serif;
 	font-size: 0.5em;
+	padding: 1em  1em;
+	margin: 0;
+	text-align: justify;
 }
 
 #contenido #me_details span:hover
@@ -246,7 +329,7 @@ nav ul li a
 
 #contenido  #me  figure
 {
-	padding: 0.5em 0 0 0.3em;
+	padding: 1em 0 0 0.3em;
 	margin: 0;
 }
 
@@ -256,7 +339,8 @@ nav ul li a
 	border-radius: 50%;
 }
 
-@media screen and (min-width: 1080px){
+@media screen and (min-width: 1000px){
+
 	body
 	{
 		text-align: center;
@@ -269,7 +353,8 @@ nav ul li a
 	{
 		display: block;
 		color: white;
-		font-size: 0.5em;
+		font-size: 16px;
+		padding: 0 10em;
 		text-align: center;
 	}
 
