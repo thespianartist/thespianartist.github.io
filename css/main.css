@@ -109,7 +109,6 @@ header
 	overflow: hidden;
 	position: relative;
 	background: #FAFAFF;
-
 }
 
 header h1
@@ -189,7 +188,8 @@ nav ul li a
 	display: block;
 	padding: 0.5em 0.5em 0.5em 0;
 }
- 
+
+
 #contenido_education:before{
 	content:"";
 	position: absolute;
@@ -214,7 +214,6 @@ nav ul li a
 	padding: 0;
 	position: relative;
 	text-align: center;
-	
 }
 
 #contenido_education #education h2
@@ -227,22 +226,21 @@ nav ul li a
 	margin: 0;
 }
 
+#contenido_education #education p
+{
+ 	display: block;
+	color: white;
+	font-family: 'robotothin', sans-serif;
+	font-size: 1em;
+	padding: 2em  2em;
+	margin: 0;
+	text-align: center;
+}
 
 
 #contenido_education #education #ipn, #contenido_education #education #mejorandola
 {
 	position: relative;
-}
-
-#contenido_education #education #ipn:after
-{
-	content: "Instituto Politecnico Nacional";
-	color: white;
-	position: absolute;
-	top: 50%;
-	left: 70%
-	padding: 0 0 0 0.5em;
-
 }
 
 #contenido_education #education #ipn img
@@ -252,12 +250,6 @@ nav ul li a
 	border-radius: 2em;
 }
 
-
-#contenido_education #education #mejorandola:after
-{
-	content: "mejorandola";
-	color: white;
-}
 
 #contenido_education #education #mejorandola img
 {
@@ -339,6 +331,14 @@ nav ul li a
 	border-radius: 50%;
 }
 
+@media screen and (min-width: 768px){
+
+	#contenido_education #education #ipn, #contenido_education #education #mejorandola
+	{
+		display: inline-block;
+	}
+}
+
 @media screen and (min-width: 1000px){
 
 	body
@@ -358,8 +358,23 @@ nav ul li a
 		text-align: center;
 	}
 
+	#contenido_education #education p
+	{
+		display: block;
+		color: white;
+		font-size: 16px;
+		padding: 0 10em;
+		text-align: center;
+	}
+
+	#contenido_education #education #ipn, #contenido_education #education #mejorandola
+	{
+		display: inline-block;
+	}
 
 }
+
+
 
 
 
