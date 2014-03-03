@@ -429,10 +429,32 @@ nav ul li a
 		left: 1em;
 }
 
+#contenido_pasion #gdayx img
+{
+	width: 100px;
+}
+
+#contenido_pasion #developerbus img
+{
+	width: 200px;
+}
+
+#contenido_pasion #developerbus figcaption
+{
+	padding-left: 2em;
+}
+
+
+
 
 @media screen and (min-width: 768px){
 
 	#contenido_education #education #ipn, #contenido_education #education #mejorandola
+	{
+		display: inline-block;
+	}
+
+	#contenido_pasion #pasion #gdg, #contenido_pasion #pasion #gdayx
 	{
 		display: inline-block;
 	}
@@ -469,6 +491,13 @@ nav ul li a
 	#contenido_education #education #ipn, #contenido_education #education #mejorandola
 	{
 		display: inline-block;
+	}
+
+	#contenido_pasion #pasion #gdg, #contenido_pasion #pasion #gdayx, #contenido_pasion #pasion #developerbus
+	{
+		display: inline-block;
+		padding: 0;
+		margin: 0 0 1em 0;
 	}
 
 }
