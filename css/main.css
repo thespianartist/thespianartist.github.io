@@ -209,6 +209,8 @@ nav ul li a
 {
 	color: white;
 	font-size: 3em;
+	padding: 0;
+	margin: 0;
 }
 
 #contenido_contact #contact #pikachu img
@@ -220,6 +222,14 @@ nav ul li a
 #contenido_contact #contact #pikachu figcaption
 {
 	color: white;
+}
+
+#contenido_contact #contact a
+{
+	text-decoration: none;
+	color: white;
+	font-size: 2em;
+	padding-right: 1em;
 }
 
 
@@ -299,7 +309,7 @@ nav ul li a
 }
 
 
-#me , #education, #pasion 
+#me , #education, #pasion, #contact 
 {
 	padding: 1em 0 3em 0;
 	display: block;
