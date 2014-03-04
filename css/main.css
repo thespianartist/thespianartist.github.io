@@ -388,59 +388,58 @@ nav ul li a
 
 #contenido_pasion #pasion p 
 {
-		display: block;
-		color: black;
-		font-size: 16px;
-		padding: 0 3em;
-		text-align: center;
+	display: block;
+	color: black;
+	font-size: 16px;
+	padding: 0 3em;
+	text-align: center;
 } 
 
 #contenido_pasion #android
 {
-		color: #97cb02;
-		position: relative;
+	color: #97cb02;
+	position: relative;
 }
 
 #contenido_pasion #android:after
 {
-		content: "android";
-		font-size: 16px;
-		position: absolute;
-		left: 0.5em;
+	content: "android";
+	font-size: 16px;
+	position: absolute;
+	left: 0.5em;
 }
 
 #contenido_pasion #responsive
 {
-		color: #ff0001;
-		position: relative;
+	color: #ff0001;
+	position: relative;
 }
 
 #contenido_pasion #responsive:after
 {
-		content: "hardware";
-		font-size: 16px;
-		position: absolute;
-		left: 0.5em;
+	content: "hardware";
+	font-size: 16px;
+	position: absolute;
+	left: 0.5em;
 }
 
 #contenido_pasion #html5
 {
-		color: #e54d26;
-		position: relative;
+	color: #e54d26;
+	position: relative;
 }
 
 #contenido_pasion #html5:after
 {
-		content: "html5";
-		font-size: 16px;
-		position: absolute;
-		left: 1em;
+	content: "html5";
+	font-size: 16px;
+	position: absolute;
+	left: 1em;
 }
 
 #contenido_pasion #video
 {
-	  margin-left: 0.3em;
-	  
+	 margin-left: 2em;
 }
 
 #contenido_pasion #gdayx img
@@ -472,15 +471,15 @@ nav ul li a
 	{
 		display: inline-block;
 	}
-	
-	#contenido_pasion #video
+
+	#contenido_pasion #pasion #developerbus, #contenido_pasion #pasion #video
 	{
-	 margin: 0;
-	}
+		display: inline-block;
+	}	
 
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1100px){
 
 	body
 	{
@@ -513,7 +512,7 @@ nav ul li a
 		display: inline-block;
 	}
 
-	#contenido_pasion #pasion #gdg, #contenido_pasion #pasion #gdayx, #contenido_pasion #pasion #developerbus,  #contenido_pasion #pasion #video
+	#contenido_pasion #pasion #gdg, #contenido_pasion #pasion #gdayx, #contenido_pasion #pasion #developerbus
 	{
 		display: inline-block;
 		padding: 0;
