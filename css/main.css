@@ -200,6 +200,29 @@ nav ul li a
 }
 
 
+#contenido_contact
+{
+	background: #ded37b;
+}
+
+#contenido_contact #contact h2
+{
+	color: white;
+	font-size: 3em;
+}
+
+#contenido_contact #contact #pikachu img
+{
+	width: 200px;
+	border-radius: 50%;
+}
+
+#contenido_contact #contact #pikachu figcaption
+{
+	color: white;
+}
+
+
 #contenido_education:before{
 	content:"";
 	position: absolute;
@@ -439,7 +462,7 @@ nav ul li a
 
 #contenido_pasion #video
 {
-	 margin-left: 2em;
+	margin-left: 2em;
 }
 
 #contenido_pasion #gdayx img
@@ -475,7 +498,7 @@ nav ul li a
 	#contenido_pasion #pasion #developerbus, #contenido_pasion #pasion #video
 	{
 		display: inline-block;
-	}	
+	}
 
 }
 
