@@ -228,8 +228,29 @@ nav ul li a
 {
 	text-decoration: none;
 	color: white;
-	font-size: 2em;
-	padding-right: 1em;
+	font-size: 2.5em;
+	padding-right: 0.8em;
+}
+
+#contenido_contact #contact #plus
+{
+	color:#d73c31;
+}
+
+#contenido_contact #contact #github
+{
+	color:#333333;
+}
+
+#contenido_contact #contact #twitter
+{
+	color:#55acee;
+}
+
+
+#contenido_contact #contact #facebook
+{
+	color:#44619d;
 }
 
 
