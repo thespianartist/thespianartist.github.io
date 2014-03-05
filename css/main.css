@@ -115,10 +115,15 @@ footer p:before
 
 header
 {
-	padding: 0.5em;
-	overflow: hidden;
-	position: relative;
-	background: #FAFAFF;
+	padding: 0;
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 2;
+	background: rgba(255,255,255,0.95);
 }
 
 header h1
@@ -126,7 +131,9 @@ header h1
 	color : black;
 	margin: 0 0 0 0;
 	font-family: 'robotothin', sans-serif;
-	padding: 0;
+	padding-top: 0.2em;
+	padding-left: 0.5em;
+	display: block;
 }
 
 
@@ -134,47 +141,39 @@ header h1:after
 {
    content: "|";
    padding-left: 1em;
-   color: #00de72;
+   color: #03b4fd;
    padding: 0;
-   margin: 0;
+   margin: 0 0 0 0;
 }
 
 
 header p
 {
-	color: #00de72;
-	margin: 0;
+	color: #03b4fd;
 	padding: 0;
+	display: block;
 	margin-right: solid red 2px;
 	font-family: 'robotothin', sans-serif;
 }
 
 
-header #triangulo
-{
-	width: 0; 
-	height: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 0 0 0 0;
-	border-right: 2.5em solid transparent;
-	border-bottom: 4em solid rgba(242, 58, 78,0.4);
-}
 
-
-header h1, header p, header #triangulo
+header h1, header p, nav
 {
 	display: inline-block;
 }
 
 nav
 {	
-	background: #03b4fd;
-	border-bottom: solid #03A3E5 4px;
-	padding: 0.5em;
-	position: relative;
-
+	background: rgb(3,180,253);
+    border-bottom: 1em solid transparent;
+	border-left: 1em solid rgba(255, 255,255,1);
+	border-radius: 2em 0 0 1em; 
+	padding: 0.6em;
+	margin: 0;
+	float: right;
+	padding-right: 32%;
+	display: none;
 }
 
 nav ul
@@ -196,7 +195,12 @@ nav ul li a
 	text-decoration: none;
 	font-family: 'robotothin', sans-serif;
 	display: block;
-	padding: 0.5em 0.5em 0.5em 0;
+	padding: 0.5em 0 0 0.5em;
+}
+
+nav ul li a:hover
+{
+	color: black;
 }
 
 
@@ -222,6 +226,8 @@ nav ul li a
 #contenido_contact #contact #pikachu figcaption
 {
 	color: white;
+	font-style: italic;
+	margin-top: 0.2em;
 }
 
 #contenido_contact #contact a
@@ -229,12 +235,13 @@ nav ul li a
 	text-decoration: none;
 	color: white;
 	font-size: 2.5em;
-	padding-right: 0.8em;
+	padding-right: 0.3em;
 }
 
 #contenido_contact #contact #plus
 {
 	color:#d73c31;
+	padding-left: 0.3em;
 }
 
 #contenido_contact #contact #github
@@ -334,6 +341,11 @@ nav ul li a
 {
 	padding: 1em 0 3em 0;
 	display: block;
+}
+
+#me
+{
+	margin-top: 3.5em;
 }
 
 #contenido #me figure, #contenido #me_details
@@ -516,6 +528,11 @@ nav ul li a
 
 @media screen and (min-width: 768px){
 
+	nav
+	{
+		display: block;
+	}
+
 	#contenido_education #education #ipn, #contenido_education #education #mejorandola
 	{
 		display: inline-block;
@@ -541,6 +558,11 @@ nav ul li a
 		margin: 0 auto;
 		max-width: 1100px;
 		background: #7d7d7f;
+	}
+
+	nav
+	{
+		display: block;
 	}
 
 	#contenido #me_details p
