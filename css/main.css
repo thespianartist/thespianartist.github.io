@@ -268,14 +268,9 @@ nav ul li a:hover
   	left: 0;
   	z-index: -1;
 	background-image: url(../img/fondoeducacion.jpg);
+	background-repeat: no-repeat;
 	height: 100%;
 	width: 100%;
-
-  	-webkit-filter: blur(4px);
-  	-moz-filter: blur(4px);
-  	-o-filter: blur(4px);
-  	-ms-filter: blur(4px);
-  	filter: blur(4px);
 }
 
 #contenido_education 
@@ -331,15 +326,14 @@ nav ul li a:hover
 
 
 #contenido{
-	background: rgba(0, 0, 0, 0.5);
-	margin: 0 0 1em 0;
+	background: #2fcc71;
 	padding: 0;
 }
 
 
 #me , #education, #pasion, #contact 
 {
-	padding: 1em 0 3em 0;
+	padding: 0.7em 0 2em 0;
 	display: block;
 }
 
