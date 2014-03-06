@@ -503,8 +503,17 @@ header nav ul li a:hover
 @media screen and (min-width: 768px){
 
 	header nav
+	{	
+		padding: 0.3em 1em;
+		margin: 0;
+		float: right;
+		padding-right: 30%;
+	}
+
+
+	header nav
 	{
-		display: none;
+		display: inline-block;
 	}
 
 	#contenido_education #education #ipn, #contenido_education #education #mejorandola
