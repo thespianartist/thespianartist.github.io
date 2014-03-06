@@ -79,12 +79,11 @@
 	content: "\e60d";
 }
 
-
-
 body
 {
 	background:  #7d7d7f;
 	font-size: 16px;
+	text-align: center;
 	font-family: 'robotothin', sans-serif;
 }
 
@@ -116,13 +115,14 @@ footer p:before
 header
 {
 	padding: 0;
+	margin: 0;
 	position: fixed;
-	display: block;
 	top: 0;
+	overflow: hidden;
 	left: 0;
 	width: 100%;
 	margin: 0 auto;
-	z-index: 2;
+	z-index: 3;
 	background: rgba(255,255,255,0.95);
 }
 
@@ -131,7 +131,7 @@ header h1
 	color : black;
 	margin: 0 0 0 0;
 	font-family: 'robotothin', sans-serif;
-	padding-top: 0.2em;
+	padding-top: 0.6em;
 	padding-left: 0.5em;
 	display: block;
 }
@@ -151,54 +151,52 @@ header p
 {
 	color: #03b4fd;
 	padding: 0;
+	margin: 0;
 	display: block;
-	margin-right: solid red 2px;
 	font-family: 'robotothin', sans-serif;
 }
 
-
-
-header h1, header p, nav
+header h1, header p, header nav
 {
 	display: inline-block;
 }
 
-nav
+header nav
 {	
 	background: rgb(3,180,253);
     border-bottom: 1em solid transparent;
 	border-left: 1em solid rgba(255, 255,255,1);
 	border-radius: 2em 0 0 1em; 
-	padding: 0.6em;
+	padding: 0.3em 1em;
 	margin: 0;
 	float: right;
-	padding-right: 32%;
+	padding-right: 35%;
 	display: none;
 }
 
-nav ul
+header nav ul
 {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
-nav ul li
+header nav ul li
 {
 	display: inline-block;
-	margin: 0 0.5em 0 0;
+	margin: 1em 0.5em 0 0;
 }
 
-nav ul li a
+header nav ul li a
 {
 	color: white;
 	text-decoration: none;
 	font-family: 'robotothin', sans-serif;
 	display: block;
-	padding: 0.5em 0 0 0.5em;
+	padding: 0.5em 0.5em 0 0.5em;
 }
 
-nav ul li a:hover
+header nav ul li a:hover
 {
 	color: black;
 }
@@ -206,7 +204,7 @@ nav ul li a:hover
 
 #contenido_contact
 {
-	background: #ded37b;
+	background: #ffb900;
 }
 
 #contenido_contact #contact h2
@@ -276,7 +274,7 @@ nav ul li a:hover
 #contenido_education 
 {
 	margin: 0;
-	padding: 0;
+	padding-top: 4em;
 	position: relative;
 	text-align: center;
 }
@@ -326,7 +324,7 @@ nav ul li a:hover
 
 
 #contenido{
-	background: #2fcc71;
+	background: #ee1b25;
 	padding: 0;
 }
 
@@ -339,7 +337,8 @@ nav ul li a:hover
 
 #me
 {
-	margin-top: 3.5em;
+	margin-top: 3.8em;
+	padding-top: 2.5em;
 }
 
 #contenido #me figure, #contenido #me_details
@@ -352,8 +351,6 @@ nav ul li a:hover
 {
 	color: white;
 	font-size: 2em;
-	margin: 0;
-	padding: 0.5em;
 }
 
 #contenido #me_details h2
@@ -361,16 +358,6 @@ nav ul li a:hover
 	margin: 0;
 	padding: 0;
 	font-family: 'robotothin', sans-serif;
-}
-
-#contenido #me_details h2:after
-{
-	content: "-"
-}
-
-#contenido #me_details h2:before
-{
-	content: "-"
 }
 
 #contenido #me_details span
@@ -386,32 +373,25 @@ nav ul li a:hover
 	font-family: 'robotothin', sans-serif;
 	font-size: 0.5em;
 	padding: 1em  1em;
-	margin: 0 0 0.5em 0;
+	margin: 0 0 2em 0;
 	text-align: justify;
 }
 
 #contenido #me_details #contactme
 {
 	text-decoration: none;
-	background: white;
-	border-bottom: solid #E5E5E5 5px;
+	border: solid #E5E5E5 2px;
 	font-size: 0.8em;
-	color: #3e3e3f;
-	padding: 0.2em;
+	color: white;
+	padding: 0.5em;
 	width: 8em;
 	border-radius: 0.2em;
-	margin-top: 1em;
-}
-
-
-#contenido #me_details span:hover
-{
-	color: red;
+	margin-top: 2em;
 }
 
 #contenido  #me  figure
 {
-	padding: 1em 0 0 0.3em;
+	padding: 0;
 	margin: 0;
 }
 
@@ -522,9 +502,9 @@ nav ul li a:hover
 
 @media screen and (min-width: 768px){
 
-	nav
+	header nav
 	{
-		display: block;
+		display: none;
 	}
 
 	#contenido_education #education #ipn, #contenido_education #education #mejorandola
@@ -548,15 +528,15 @@ nav ul li a:hover
 
 	body
 	{
-		text-align: center;
 		margin: 0 auto;
 		max-width: 1100px;
 		background: #7d7d7f;
+		text-align: center;
 	}
 
-	nav
+	header nav
 	{
-		display: block;
+		display: inline-block;
 	}
 
 	#contenido #me_details p
