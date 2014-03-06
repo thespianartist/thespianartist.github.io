@@ -439,14 +439,17 @@ header nav ul li a:hover
 {
 	color: #97cb02;
 	position: relative;
+
 }
 
 #contenido_pasion #android:after
 {
 	content: "android";
+	font-family: 'robotothin', sans-serif;
 	font-size: 16px;
 	position: absolute;
 	left: 0.5em;
+	top: 5em;
 }
 
 #contenido_pasion #responsive
@@ -459,8 +462,10 @@ header nav ul li a:hover
 {
 	content: "hardware";
 	font-size: 16px;
+	font-family: 'robotothin', sans-serif;
 	position: absolute;
 	left: 0.5em;
+	top: 5em;
 }
 
 #contenido_pasion #html5
@@ -473,8 +478,10 @@ header nav ul li a:hover
 {
 	content: "html5";
 	font-size: 16px;
+	font-family: 'robotothin', sans-serif;
 	position: absolute;
 	left: 1em;
+	top: 5em;
 }
 
 #contenido_pasion #video
