@@ -131,7 +131,8 @@ header h1
 	color : black;
 	margin: 0 0 0 0;
 	font-family: 'robotothin', sans-serif;
-	padding-top: 0.6em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
 	padding-left: 0.5em;
 	display: block;
 }
