@@ -126,6 +126,26 @@ header
 	background: rgba(255,255,255,0.95);
 }
 
+header #show_menu
+{
+	position: absolute;
+	top: 0;
+	text-decoration: none;
+	padding: 1em 1em 1em 1em;
+	text-align: center;
+	background: white;
+	color: rgb(3,180,253);
+	border-radius: 0 0 10px 10px;
+	border-bottom: solid rgb(3,180,253) 3px;
+	border-left: solid rgb(3,180,253) 3px;
+	border-right: solid rgb(3,180,253) 3px;
+	right: 0;
+	z-index: 3;
+	font-family: 'robotothin', sans-serif;
+	float: right;
+
+}
+
 header h1
 {
 	color : black;
@@ -165,13 +185,11 @@ header h1, header p, header nav
 header nav
 {	
 	background: rgb(3,180,253);
-    border-bottom: 1em solid transparent;
-	border-left: 1em solid rgba(255, 255,255,1);
-	border-radius: 2em 0 0 1em; 
-	padding: 0.3em 1em;
+	position: relative;
+	padding: 1em 0.5em;
 	margin: 0;
-	float: right;
-	padding-right: 35%;
+	top: 0;
+	left: 0;
 	display: none;
 }
 
@@ -180,12 +198,15 @@ header nav ul
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	text-align: left;
 }
 
 header nav ul li
 {
 	display: inline-block;
-	margin: 1em 0.5em 0 0;
+	margin: 0;
+	text-align: left;
+	padding: 0;
 }
 
 header nav ul li a
@@ -516,12 +537,27 @@ header nav ul li a:hover
 		margin: 0;
 		float: right;
 		padding-right: 20%;
+		border-bottom: 1em solid transparent;
+		border-left: 1em solid rgba(255, 255,255,1);
+		border-radius: 2em 0 0 1em;
+		position: relative;
 	}
-
 
 	header nav
 	{
 		display: inline-block;
+	}
+
+	header nav ul li
+	{
+		display: inline-block;
+		margin: 1em 0.5em 0 0;
+	}
+
+
+	header #show_menu
+	{
+		display: none;
 	}
 
 	#contenido_education #education #ipn, #contenido_education #education #mejorandola
@@ -554,6 +590,21 @@ header nav ul li a:hover
 	header nav
 	{
 		display: inline-block;
+		position: relative;
+		border-bottom: 1em solid transparent;
+		border-left: 1em solid rgba(255, 255,255,1);
+		border-radius: 2em 0 0 1em;
+	}
+
+	header nav ul li
+	{
+		display: inline-block;
+		margin: 1em 0.5em 0 0;
+	}
+
+	header #show_menu
+	{
+		display: none;
 	}
 
 	#contenido #me_details p
