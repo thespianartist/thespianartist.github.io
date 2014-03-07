@@ -1,14 +1,14 @@
 @font-face {
-    font-family: 'robotothin';
-    src: url('../fonts/Roboto-Thin-webfont.eot');
-    src: url('../fonts/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Roboto-Thin-webfont.woff') format('woff'),
-         url('../fonts/Roboto-Thin-webfont.ttf') format('truetype'),
-         url('../fonts/Roboto-Thin-webfont.svg#robotothin') format('svg');
+    font-family: 'open_sansregular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
+
 
 
 @font-face {
@@ -84,13 +84,13 @@ body
 	background:  #7d7d7f;
 	font-size: 16px;
 	text-align: center;
-	font-family: 'robotothin', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 }
 
 footer
 {	
 	padding: 0.5em;
-	font-family: 'robotothin', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 	text-align: center;
 	color: black;
 	background: #00de72;
@@ -131,7 +131,7 @@ header #show_menu
 	position: absolute;
 	top: 0;
 	text-decoration: none;
-	padding: 1em 1em 1em 1em;
+	padding: 0.5em 0.5em 0.5em 0.5em;
 	text-align: center;
 	background: white;
 	color: rgb(3,180,253);
@@ -141,7 +141,7 @@ header #show_menu
 	border-right: solid rgb(3,180,253) 3px;
 	right: 0;
 	z-index: 3;
-	font-family: 'robotothin', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 	float: right;
 
 }
@@ -150,7 +150,7 @@ header h1
 {
 	color : black;
 	margin: 0 0 0 0;
-	font-family: 'robotothin', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 	padding-top: 0.3em;
 	padding-bottom: 0.3em;
 	padding-left: 0.5em;
@@ -161,7 +161,6 @@ header h1
 header h1:after
 {
    content: "|";
-   padding-left: 1em;
    color: #03b4fd;
    padding: 0;
    margin: 0 0 0 0;
@@ -172,9 +171,10 @@ header p
 {
 	color: #03b4fd;
 	padding: 0;
+	font-size: 0.9em;
 	margin: 0;
 	display: block;
-	font-family: 'robotothin', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 }
 
 header h1, header p, header nav
@@ -213,7 +213,7 @@ header nav ul li a
 {
 	color: white;
 	text-decoration: none;
-	font-family: 'robotothin', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 	display: block;
 	padding: 0.5em 0.5em 0 0.5em;
 }
@@ -306,7 +306,7 @@ header nav ul li a:hover
 	color: white;
 	font-size: 3em;
 	text-align: center;
-	font-family: 'robotothin', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 	padding: 0;
 	margin: 0;
 }
@@ -315,7 +315,7 @@ header nav ul li a:hover
 {
  	display: block;
 	color: white;
-	font-family: 'robotothin', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 	font-size: 1em;
 	padding: 2em  2em;
 	margin: 0;
@@ -379,7 +379,7 @@ header nav ul li a:hover
 {
 	margin: 0;
 	padding: 0;
-	font-family: 'robotothin', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 }
 
 #contenido #me_details span
@@ -392,7 +392,7 @@ header nav ul li a:hover
 {
 	display: block;
 	color: white;
-	font-family: 'robotothin', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 	font-size: 0.5em;
 	padding: 1em  1em;
 	margin: 0 0 2em 0;
@@ -467,7 +467,7 @@ header nav ul li a:hover
 #contenido_pasion #android:after
 {
 	content: "android";
-	font-family: 'robotothin', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 	font-size: 16px;
 	position: absolute;
 	left: 0.5em;
@@ -484,7 +484,7 @@ header nav ul li a:hover
 {
 	content: "hardware";
 	font-size: 16px;
-	font-family: 'robotothin', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 	position: absolute;
 	left: 0.5em;
 	top: 5em;
@@ -500,7 +500,7 @@ header nav ul li a:hover
 {
 	content: "html5";
 	font-size: 16px;
-	font-family: 'robotothin', sans-serif;
+	font-family: 'open_sansregular', sans-serif;
 	position: absolute;
 	left: 1em;
 	top: 5em;
